@@ -17,9 +17,11 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        // movement
         float moveInput = Input.GetAxis("Horizontal");
         rigidbody.linearVelocity = new Vector2(moveInput * moveSpeed, rigidbody.linearVelocity.y);
 
+        // jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
     }
