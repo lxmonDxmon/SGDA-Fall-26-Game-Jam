@@ -691,7 +691,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
-  jumpForce: 8
+  jumpForce: 12
   groundCheck: {fileID: 2022087058}
   groundCheckRadius: 0.2
   groundLayer:
@@ -769,6 +769,26 @@ PrefabInstance:
     - target: {fileID: 147910763696274274, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444189982170861498, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444189982170861498, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937638026888925521, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937638026888925521, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937638026888925521, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7435491570128453359, guid: 9ae05b851126ee94395df4412f20a3e6, type: 3}
       propertyPath: m_Name
