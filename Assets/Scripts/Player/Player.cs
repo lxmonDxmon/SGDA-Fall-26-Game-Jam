@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
     [Header("Movement Controls")]
@@ -7,6 +8,9 @@ public class Player : MonoBehaviour {
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
+
+    [Header("Level Controls")]
+    [SerializeField] private string currentScene;
 
     private Rigidbody2D rigidbody;
     private bool isGrounded;
@@ -24,6 +28,10 @@ public class Player : MonoBehaviour {
         // jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
+
+        // restart level
+        if (Input.GetKeyDown(KeyCode.R))
+            UnityEngine.SceneManagement.SceneManager.LoadScene(currentScene);
     }
 
     private void FixedUpdate() {
