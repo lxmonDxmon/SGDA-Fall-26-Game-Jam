@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 909bef3606ae5c54b95c609b808379af
+guid: 9fe807bf35742844e99843f75d6f878e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3258506301487416083
-    second: Level 2 Background_0
+      213: 8652600807915908713
+    second: File Explorer Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level 2 Background_0
+      name: File Explorer Icon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 9
+        y: 13
+        width: 82
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3138786873a883d20800000000000000
-      internalID: 3258506301487416083
+      spriteID: 96ee5136796341870800000000000000
+      internalID: 8652600807915908713
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Level 2 Background_0: 3258506301487416083
+      File Explorer Icon_0: 8652600807915908713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 909bef3606ae5c54b95c609b808379af
+guid: d848b5c1778adad4db11742f2b0c614a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3258506301487416083
-    second: Level 2 Background_0
+      213: -3168085203678426771
+    second: Unity Logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level 2 Background_0
+      name: Unity Logo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 93
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3138786873a883d20800000000000000
-      internalID: 3258506301487416083
+      spriteID: d698390ea43b804d0800000000000000
+      internalID: -3168085203678426771
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Level 2 Background_0: 3258506301487416083
+      Unity Logo_0: -3168085203678426771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
