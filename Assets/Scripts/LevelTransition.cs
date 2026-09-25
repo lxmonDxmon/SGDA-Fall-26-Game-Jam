@@ -21,4 +21,9 @@ public class LevelTransition : MonoBehaviour {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextLevel);
     }
+
+    // used by the restart button at the end of the game
+    public void RestartGame() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
+    }
 }

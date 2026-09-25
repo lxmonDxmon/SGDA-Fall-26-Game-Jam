@@ -762,8 +762,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294924544
+  m_fontColor: {r: 0, g: 0.35003853, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1257,6 +1257,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   currentScene: Level 1
+  audioManager: {fileID: 0}
 --- !u!114 &2120769447
 MonoBehaviour:
   m_ObjectHideFlags: 0
