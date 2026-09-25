@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
     [Header("Movement Controls")]
@@ -14,9 +13,12 @@ public class Player : MonoBehaviour {
 
     private Rigidbody2D rigidbody;
     private bool isGrounded;
+    [HideInInspector] public AudioManager audioManager;
 
     private void Awake() {
         rigidbody = GetComponent<Rigidbody2D>();
+        audioManager = GetComponent<AudioManager>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -26,12 +28,15 @@ public class Player : MonoBehaviour {
         rigidbody.linearVelocity = new Vector2(moveInput * moveSpeed, rigidbody.linearVelocity.y);
 
         // jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
+            audioManager.PlaySound("Jump");
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
+        }
 
         // restart level
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)) {
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentScene);
+        }
     }
 
     private void FixedUpdate() {

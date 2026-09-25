@@ -11,6 +11,10 @@ public class BrowserPage : MonoBehaviour {
         if (collision.tag != "Player")
             return;
 
+        // play click sound from player because browser can't play sound once it's destroyed
+        Player player = collision.gameObject.GetComponent<Player>();
+        player.audioManager.PlaySound("Change Level");
+
         Destroy(gameObject);
     }
 }
